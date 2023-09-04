@@ -24,9 +24,9 @@ body {
     background-color: var(--paper-bg-color);
     padding: 20px;
     width: calc(210px * 3);
-    height: calc(297px * 3);
     max-width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
 }
 
 #name {
@@ -159,4 +159,10 @@ a:active {
     padding: 4px 8px;
     border-radius: 100px;
     font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
 }
