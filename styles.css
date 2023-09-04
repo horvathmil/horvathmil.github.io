@@ -1,0 +1,162 @@
+:root {
+    --body-bg-color: rgb(46, 46, 46);
+    --text-color: black;
+    --paper-bg-color: white;
+    --stroke-color: rgb(189, 189, 189);
+    --faded-text: rgb(189, 189, 189);
+    --chip-bg-color: rgb(216, 216, 216);
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    align-items: start;
+    justify-content: center;
+    font-family: 'Bitter';
+    color: var(--text-color);
+}
+
+
+#paper {
+    background-color: var(--paper-bg-color);
+    padding: 20px;
+    width: calc(210px * 3);
+    height: calc(297px * 3);
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#name {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.faded-text {
+    color: var(--faded-text) !important;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-end {
+    align-items: end;
+}
+
+.details {
+    gap: 4px;
+}
+
+#city {
+    font-size: 20px;
+}
+
+#country {
+    font-size: 24px;
+}
+
+.address {
+    gap: 4px;
+    line-height: 1;
+}
+
+.section {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    width: 175px;
+    border-right: 1px solid var(--stroke-color);
+}
+
+.section-body {
+    margin-left: 10px;
+    width: 100%;
+    gap: 20px;
+}
+
+.divider {
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+hr {
+    color: var(--stroke-color);
+    background-color: var(--stroke-color);
+    height: 1px;
+    border-width: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-item {
+    width: 100%;
+    text-align: center;
+    gap: 4px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+a:link {
+    color: var(--text-color);
+}
+
+a:visited {
+    color: var(--text-color);
+
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--text-color);
+
+}
+
+/* selected link */
+a:active {
+    color: var(--text-color);
+}
+
+.long-text {
+    font-size: small;
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 10px 10px 10px;
+}
+
+.flex-row-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.interests {
+    width: 100%;
+    margin-left: 20px;
+    gap: 4px;
+}
+
+.chip {
+    background-color: var(--chip-bg-color);
+    padding: 4px 8px;
+    border-radius: 100px;
+    font-size: 12px;
+}
